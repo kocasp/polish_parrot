@@ -74,6 +74,14 @@ POLISH_PARROT v1.0 is the Polish subset of PARROT v1.0 and consists of:
 - from Fulak et al
 - from Poland
 
+## Interaktywna przeglądarka
+
+Wszystkie 837 badań można przeglądać, filtrować i przeszukiwać w przeglądarce internetowej:
+
+**https://kocasp.github.io/polish_parrot/**
+
+Strona jest publikowana z gałęzi `gh-page` (GitHub Pages). Umożliwia filtrowanie po modality, obszarze anatomicznym, specjalności i kodzie ICD-10 oraz pełnotekstowe wyszukiwanie w polskich opisach i tłumaczeniach.
+
 ## jsonl structure
 
 POLISH_PARROT v1.0 is released as a single .jsonl file (1.9MB), with the following structure:
