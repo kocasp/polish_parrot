@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POLISH_PARROT — przeglądarka badań</title>
+  <meta name="description" content="Interaktywna przeglądarka polskich badań radiologicznych z datasetu POLISH_PARROT v1.0">
+  <link rel="icon" href="images/parrot.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <img src="images/parrot.png" alt="POLISH_PARROT" class="logo">
+      <div class="brand-text">
+        <h1>POLISH_PARROT</h1>
+        <p>Interaktywna przeglądarka polskich badań radiologicznych</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <label class="switch">
+        <input type="checkbox" id="toggle-translation" checked>
+        <span>Pokaż tłumaczenie</span>
+      </label>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Filtry">
+      <div class="filter-head">
+        <h2>Filtry</h2>
+        <button id="clear-filters" class="link-btn" type="button">Wyczyść</button>
+      </div>
+
+      <section class="filter-group">
+        <h3>Modality</h3>
+        <div id="modality-filters" class="chips"></div>
+      </section>
+
+      <section class="filter-group">
+        <h3>Obszar anatomiczny</h3>
+        <select id="area-select"></select>
+      </section>
+
+      <section class="filter-group">
+        <h3>Specjalność</h3>
+        <select id="subspecialty-select"></select>
+      </section>
+
+      <section class="filter-group">
+        <h3>ICD-10</h3>
+        <input id="icd-input" type="search" placeholder="np. C71.3" autocomplete="off">
+      </section>
+    </aside>
+
+    <main class="main">
+      <div class="toolbar">
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Szukaj w opisach, tłumaczeniach, ICD…" autocomplete="off" aria-label="Szukaj">
+        </div>
+        <div class="toolbar-meta">
+          <span id="results-count" class="results-count">Ładowanie…</span>
+          <select id="sort-select" aria-label="Sortowanie">
+            <option value="no-asc">Numer rosnąco</option>
+            <option value="no-desc">Numer malejąco</option>
+            <option value="modality">Modality</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="results" class="results" aria-live="polite"></div>
+      <nav id="pagination" class="pagination" aria-label="Paginacja"></nav>
+    </main>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <header class="modal-head">
+        <div>
+          <h2 id="modal-title">Badanie</h2>
+          <div id="modal-meta" class="modal-meta"></div>
+        </div>
+        <button class="icon-btn" type="button" data-close aria-label="Zamknij">×</button>
+      </header>
+      <div class="modal-body">
+        <section class="report-section">
+          <div class="section-head">
+            <h3>Opis (PL)</h3>
+            <button class="link-btn copy-btn" type="button" data-copy="#modal-report">Kopiuj</button>
+          </div>
+          <pre id="modal-report"></pre>
+        </section>
+        <section id="modal-translation-section" class="report-section">
+          <div class="section-head">
+            <h3>Tłumaczenie (EN)</h3>
+            <button class="link-btn copy-btn" type="button" data-copy="#modal-translation">Kopiuj</button>
+          </div>
+          <pre id="modal-translation"></pre>
+        </section>
+      </div>
+    </article>
+  </div>
+
+  <footer class="footer">
+    <span>POLISH_PARROT v1.0 · 837 badań</span>
+    <span>Dane: <a href="data/POLISH_PARROT_v1_0.jsonl">POLISH_PARROT_v1_0.jsonl</a> · Licencja CC BY-NC-SA 4.0</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
