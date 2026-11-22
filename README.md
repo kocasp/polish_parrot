@@ -7,52 +7,55 @@
 <h3 align="center">POLISH_PARROT v1.0</h3>
 
   <p align="center">
-    Polish Annotated Radiological Reports for Open Testing
+    Polish Annotated Radiological Reports for Open Testing<br />
+    Polskie anotowane opisy radiologiczne do otwartego testowania
   </p>
 </div>
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## O projekcie
 
-POLISH_PARROT is the Polish subset of the PARROT initiative, an open dataset of radiological reports on which to test LLMs.
-It contains only the reports written in Polish, extracted from PARROT v1.0 and released as a standalone dataset.
-The aim of POLISH_PARROT is to represent the diversity of Polish reporting styles to promote applicability of LLM-related research in Polish clinical settings.
-POLISH_PARROT is not-for-profit and does not receive any funding at the moment.
+POLISH_PARROT to polski podzbiór inicjatywy PARROT – otwartego zbioru opisów radiologicznych przeznaczonego do testowania dużych modeli językowych (LLM).
+Zawiera wyłącznie opisy napisane po polsku, wyodrębnione z oryginalnego repozytorium [PARROT_v1.0](https://github.com/PARROT-reports/PARROT_v1.0/) i udostępnione jako samodzielny zbiór danych.
+Celem POLISH_PARROT jest odzwierciedlenie różnorodności polskich stylów opisywania badań, tak aby wspierać zastosowanie badań nad LLM w polskiej praktyce klinicznej.
+POLISH_PARROT jest projektem non-profit i obecnie nie otrzymuje żadnego finansowania.
+
+**Źródło:** oryginalny, wielojęzyczny zbiór PARROT jest dostępny pod adresem https://github.com/PARROT-reports/PARROT_v1.0/
 
 <!-- CONTEXT -->
-## Context
+## Kontekst
 <details>
-<summary>Read the context</summary>  
+<summary>Przeczytaj kontekst</summary>  
 
-  ### Context  
-Large language models (LLMs) have shown promising capabilities for structuring, simplifying and correcting radiological reports (1–3). However, the lack of open datasets in languages other than English restricts research to using data that cannot be shared to comply with privacy policies (4). This shortcoming makes the external validation of those emerging technologies challenging, hindering their diffusion and application in non-English speaking countries (5). A multilingual, open archive of radiological reports annotated by experts could circumvent this issue, by allowing researchers to test models on clinically pertinent tasks in various languages. Here, we present the Polyglot Annotated Radiological Reports for Open Testing (PARROT) project, intended to enhance the representation of the diversity of radiological reports across centers and languages, offering researchers a different perspective for testing LLMs on medical data.
+  ### Kontekst  
+Duże modele językowe (LLM) wykazują obiecujące możliwości w zakresie strukturyzowania, upraszczania i korygowania opisów radiologicznych (1–3). Jednak brak otwartych zbiorów danych w językach innych niż angielski ogranicza badania do danych, których nie można udostępniać ze względu na przepisy o ochronie prywatności (4). To utrudnia zewnętrzną walidację tych nowych technologii, hamując ich upowszechnienie i zastosowanie w krajach nieanglojęzycznych (5). Wielojęzyczne, otwarte archiwum opisów radiologicznych anotowanych przez ekspertów mogłoby rozwiązać ten problem, pozwalając badaczom testować modele na klinicznie istotnych zadaniach w różnych językach. Przedstawiamy projekt Polyglot Annotated Radiological Reports for Open Testing (PARROT), którego celem jest lepsze odzwierciedlenie różnorodności opisów radiologicznych pomiędzy ośrodkami i językami, oferując badaczom nową perspektywę testowania LLM na danych medycznych.
 
-PARROT is intended as a collaborative dataset:  
-Facilitating the access to realistic medical texts for the community  
-Addressing the representation of non-English medical data for testing LLMs  
-Assessing the ability of LLMs to generalize across diverse languages in clinical tasks
+PARROT jest pomyślany jako zbiór tworzony wspólnie, mający na celu:  
+Ułatwienie społeczności dostępu do realistycznych tekstów medycznych  
+Zwiększenie reprezentacji nieanglojęzycznych danych medycznych w testowaniu LLM  
+Ocenę zdolności LLM do generalizacji między różnymi językami w zadaniach klinicznych
     
-### 1. Why an open multilingual dataset?
+### 1. Dlaczego otwarty, wielojęzyczny zbiór danych?
 
-Limitations of the MIMIC dataset: The exclusively English datasets on which LLMs are currently tested in radiology, such as the mono-centric MIMIC, do not capture the diversity of radiological reports across centers and languages, and thus may hinder the applicability of those results in non-English speaking countries (6). Models are already trained on the MIMIC database, raising the issue of training and testing the LLMs ability on the same dataset (7). 
-Lack of multilingual alternatives: Because of the private nature of radiological reports, there exists currently no available dataset of radiological reports beyond English. An alternative could be to translate the reports from the MIMIC database in other language, but they would fail to convey the true diversity of pathologies, examinations and reporting styles across countries.
-Rising need for diversity in benchmarks: The development of open-source lightweight models alleviates the financial barrier to accessing this technology, but makes the importance of diverse corpora on which to test them even more dire (8).
-Need for benchmarking LLMs on clinically pertinent tasks: Datasets are often crawled from websites and left un-annotated, hindering the complexity and diversity of tasks on which to test models. As a consequence, LLMs are currently benchmarked on tasks that do not represent their actual usefulness in clinical settings (7).
+Ograniczenia zbioru MIMIC: Wyłącznie anglojęzyczne zbiory danych, na których obecnie testuje się LLM w radiologii, takie jak jednoośrodkowy MIMIC, nie oddają różnorodności opisów radiologicznych pomiędzy ośrodkami i językami, co może ograniczać przenoszenie wyników do krajów nieanglojęzycznych (6). Modele są już trenowane na bazie MIMIC, co rodzi problem trenowania i testowania LLM na tym samym zbiorze danych (7).
+Brak wielojęzycznych alternatyw: Ze względu na poufny charakter opisów radiologicznych nie istnieje obecnie żaden dostępny zbiór opisów radiologicznych w językach innych niż angielski. Alternatywą mogłoby być przetłumaczenie opisów z bazy MIMIC na inne języki, jednak nie oddałyby one rzeczywistej różnorodności patologii, badań i stylów opisywania w różnych krajach.
+Rosnąca potrzeba różnorodności w benchmarkach: Rozwój otwartych, lekkich modeli obniża barierę finansową w dostępie do tej technologii, ale tym bardziej zwiększa znaczenie zróżnicowanych korpusów, na których można je testować (8).
+Potrzeba testowania LLM na klinicznie istotnych zadaniach: Zbiory danych są często pozyskiwane ze stron internetowych i pozostawiane bez anotacji, co ogranicza złożoność i różnorodność zadań, na których można testować modele. W efekcie LLM są obecnie oceniane na zadaniach, które nie odzwierciedlają ich rzeczywistej przydatności w warunkach klinicznych (7).
 
-### 2. What is PARROT?
+### 2. Czym jest PARROT?
 
-PARROT is an annotated open dataset of fictional reports written by radiologists in their native language. To circumvent privacy issues, the reports are completely fictional and as such can be shared without limitation. Because they are written by experts in their native language, they are expected to capture authentically the diversity of reporting styles and cultural specificity. The reports are annotated for five different tasks (translation, structuration, measurement extraction, correction of errors, ICD-10 code assignment), and centralized in an open archive. PARROT is intended as a test dataset for LLMs, and should not be used for training.
+PARROT to anotowany, otwarty zbiór fikcyjnych opisów napisanych przez radiologów w ich ojczystych językach. Aby uniknąć problemów z ochroną prywatności, opisy są całkowicie fikcyjne i dzięki temu mogą być udostępniane bez ograniczeń. Ponieważ piszą je eksperci w swoich ojczystych językach, powinny autentycznie oddawać różnorodność stylów opisywania i specyfikę kulturową. Opisy są anotowane pod kątem pięciu różnych zadań (tłumaczenie, strukturyzacja, ekstrakcja pomiarów, korekta błędów, przypisywanie kodów ICD-10) i gromadzone w otwartym archiwum. PARROT jest przeznaczony jako zbiór testowy dla LLM i nie powinien być używany do trenowania.
 
-### 3. How to participate?
+### 3. Jak wziąć udział?
 
-Radiologists from diverse languages, backgrounds and seniority can create fictional reports for exam modalities of their choice. The reports should be written as .txt, .rtf or .docx files. The authors must to translate the reports to English and complete the .csv with annotations. No background in informatics, AI or LLM is needed. Students are encouraged to participate if they had some experience with radiology, e.g. through an internship. 
+Radiolodzy posługujący się różnymi językami, o różnym doświadczeniu i stażu, mogą tworzyć fikcyjne opisy badań wybranych przez siebie modalności. Opisy powinny być zapisane jako pliki .txt, .rtf lub .docx. Autorzy muszą przetłumaczyć opisy na język angielski i uzupełnić plik .csv o anotacje. Nie jest wymagana wiedza z zakresu informatyki, AI ani LLM. Zachęcamy do udziału również studentów, którzy mieli kontakt z radiologią, np. podczas praktyk.
 
-### 4. Potential challenges
+### 4. Potencjalne wyzwania
 
-Engagement: reaching out to a variety of radiologists will be a critical challenge for PARROT in order to achieve a critical mass of reports in various languages. As such, participants are welcomed to invite colleagues to join the initiative.
-Scalability and maintenance: if PARROT is a success, the amount of time required to curate the database will become critical. As such, for step 2 of the project, financial support from institutions could become important, and tasks such as verifying reports, annotating them, and creating new tasks, could be crowd-sourced. At this stage of the project, we will actively seek for funding opportunities by national or international institutions (e.g., European Union, national research foundations) or industry partners. 
-Broadening the scope: multilingual medical databases are rare and radiology reports do not encompass the entirety of contexts in which a LLM can be assessed in medicine. As such, physicians from other specialties will be welcomed to join the initiative in step 2 of the project.
+Zaangażowanie: dotarcie do szerokiego grona radiologów będzie kluczowym wyzwaniem dla PARROT, aby osiągnąć masę krytyczną opisów w różnych językach. Dlatego zachęcamy uczestników do zapraszania współpracowników do inicjatywy.
+Skalowalność i utrzymanie: jeśli PARROT odniesie sukces, czas potrzebny na kurowanie bazy stanie się kluczowy. Dlatego w drugim etapie projektu istotne może być wsparcie finansowe instytucji, a zadania takie jak weryfikacja opisów, ich anotacja i tworzenie nowych zadań mogłyby być realizowane metodą crowdsourcingu. Na tym etapie projektu będziemy aktywnie poszukiwać możliwości finansowania ze strony instytucji krajowych lub międzynarodowych (np. Unii Europejskiej, krajowych fundacji naukowych) lub partnerów z przemysłu.
+Poszerzenie zakresu: wielojęzyczne medyczne bazy danych są rzadkie, a opisy radiologiczne nie obejmują wszystkich kontekstów, w których można oceniać LLM w medycynie. Dlatego w drugim etapie projektu zapraszamy do inicjatywy lekarzy innych specjalności.
 
 
 1. 	Adams LC, Truhn D, Busch F, et al. Leveraging GPT-4 for Post Hoc Transformation of Free-Text Radiology Reports into Structured Reporting: A Multilingual Feasibility Study. Radiology. 2023;230725. doi: 10.1148/radiol.230725.
@@ -66,13 +69,13 @@ Broadening the scope: multilingual medical databases are rare and radiology repo
 </details>
 
 <!-- DATASET -->
-## The POLISH_PARROT dataset
+## Zbiór danych POLISH_PARROT
 
-POLISH_PARROT v1.0 is the Polish subset of PARROT v1.0 and consists of:
-- 837 reports
-- in 1 language (Polish)
-- from Fulak et al
-- from Poland
+POLISH_PARROT v1.0 jest polskim podzbiorem PARROT v1.0 i obejmuje:
+- 837 opisów
+- w 1 języku (polskim)
+- autorstwa Fułek i in.
+- z Polski
 
 ## Interaktywna przeglądarka
 
@@ -80,41 +83,40 @@ Wszystkie 837 badań można przeglądać, filtrować i przeszukiwać w przegląd
 
 **https://kocasp.github.io/polish_parrot/**
 
-Strona jest publikowana z gałęzi `gh-page` (GitHub Pages). Umożliwia filtrowanie po modality, obszarze anatomicznym, specjalności i kodzie ICD-10 oraz pełnotekstowe wyszukiwanie w polskich opisach i tłumaczeniach.
+Strona jest publikowana z gałęzi `gh-page` (GitHub Pages). Umożliwia filtrowanie po modalności, obszarze anatomicznym, specjalności i kodzie ICD-10 oraz pełnotekstowe wyszukiwanie w polskich opisach i tłumaczeniach.
 
-## jsonl structure
+## Struktura pliku jsonl
 
-POLISH_PARROT v1.0 is released as a single .jsonl file (1.9MB), with the following structure:
+POLISH_PARROT v1.0 jest udostępniany jako pojedynczy plik .jsonl (1,9 MB) o następującej strukturze:
 ```
 data/
- └── POLISH_PARROT_v1_0.jsonl       # one JSON per line
-       ├─ no               : int   # report number
-       ├─ language         : str   # report language
-       ├─ modality         : str   # exam modality (CT, MRI, X-ray, etc)
-       ├─ area             : str   # anatomical region (head, abdomen, chest, etc)
-       ├─ report           : str   # original report
-       ├─ translation      : str   # English translation
-       ├─ report           : str   # original report
-       ├─ icd              : str   # ICD-10 codes associated with the report
-       ├─ contributor_code : str   # name of the author
-       ├─ country          : str   # country of origin
-       └─ subspecialty     : str   # two-letter code of the corresponding radiology subspecialties (NR: neuroradiology, GU: genito-urinary, etc)
+ └── POLISH_PARROT_v1_0.jsonl       # jeden obiekt JSON na linię
+       ├─ no               : int   # numer opisu
+       ├─ language         : str   # język opisu
+       ├─ modality         : str   # modalność badania (TK, MR, RTG itp.)
+       ├─ area             : str   # obszar anatomiczny (głowa, jama brzuszna, klatka piersiowa itp.)
+       ├─ report           : str   # oryginalny opis
+       ├─ translation      : str   # tłumaczenie na język angielski
+       ├─ icd              : str   # kody ICD-10 powiązane z opisem
+       ├─ contributor_code : str   # nazwisko autora
+       ├─ country          : str   # kraj pochodzenia
+       └─ subspecialty     : str   # dwuliterowy kod podspecjalności radiologicznej (NR: neuroradiologia, GU: układ moczowo-płciowy itp.)
 ```
-## Use cases
+## Przykłady zastosowań
 
-POLISH_PARROT is intended for testing, sharing ideas on use-cases of LLMs in radiology and medicine, and external validation of NLP approaches in Polish. Some use-cases are suggested in the `examples` section:
+POLISH_PARROT jest przeznaczony do testowania, wymiany pomysłów na zastosowania LLM w radiologii i medycynie oraz zewnętrznej walidacji metod NLP dla języka polskiego. Przykładowe zastosowania znajdują się w katalogu `examples`:
 ```
 examples/
-└── similar_reports.py           # for finding the most similar reports based on their embeddings with free-text queries
-└── reports_vizualisation.py     # for creating an interactive maps of reports based on their embeddings
-└── simplify_reports_ollama.py   # for simplifying reports with either a priavacy preserving model...
-└── simplify_reports_openai.py   # ...or a cloud-based model
+└── similar_reports.py           # wyszukiwanie najbardziej podobnych opisów na podstawie embeddingów i zapytań w wolnym tekście
+└── reports_vizualisation.py     # tworzenie interaktywnych map opisów na podstawie ich embeddingów
+└── simplify_reports_ollama.py   # upraszczanie opisów za pomocą modelu chroniącego prywatność...
+└── simplify_reports_openai.py   # ...lub modelu chmurowego
 ```
 
 <!-- CONTRIBUTORS -->
-## Contributors
+## Autorzy
 <details>
-<summary>PARROT exists thanks to the active submissions of 76 authors; POLISH_PARROT contains the Polish subset contributed by Fulak et al.</summary>
+<summary>PARROT istnieje dzięki zgłoszeniom 76 autorów; POLISH_PARROT zawiera polski podzbiór przygotowany przez Fułek i in.</summary>
 Kokou Adambounou, Campus University Hospital Centre, Department of Radiology and Medical Imaging, Lome, Togo
 Lisa Adams, Department of Diagnostic and Interventional Radiology, Klinikum rechts der Isar, TUM University Hospital, Technical University of Munich, Munich, Germany
 Thibault Agripnidis, Interventional Radiology Section, Department of Medical Imaging, University Hospital Timone, AP-HM, 264 Rue Saint-Pierre, 13005, Marseille, France
@@ -207,35 +209,35 @@ Sebastian Ziegelmayer, Department of Diagnostic and Interventional Radiology, Kl
 <!-- FAQ -->
 ## FAQ
 
-### I am a radiologist, can I contribute to PARROT?
+### Jestem radiologiem – czy mogę współtworzyć PARROT?
 
-We would be pleased to include your reports in the next iterations of PARROT. Please contact contributeparrot@gmail.com or create a pull request to move forward.
+Z przyjemnością włączymy Twoje opisy do kolejnych wersji PARROT. Skontaktuj się z zespołem PARROT poprzez oryginalne repozytorium [PARROT_v1.0](https://github.com/PARROT-reports/PARROT_v1.0/) lub utwórz tam pull request.
 
-### What will my reports become?
+### Co stanie się z moimi opisami?
 
-If you accept the data sharing agreement you will recieve by email, the reports will be shared publicly as part of PARROT database. Your reports will remain free for everyone to use, under CC BY-NC-SA 4.0 license.
+Jeśli zaakceptujesz umowę o udostępnianiu danych, którą otrzymasz e-mailem, opisy zostaną publicznie udostępnione jako część bazy PARROT. Pozostaną bezpłatne i dostępne dla wszystkich na licencji CC BY-NC-SA 4.0.
 
-### What do I get in return?
+### Co otrzymam w zamian?
 
-As soon as you submit 20 reports with valid translation and ICD codes, or 40 reports with translations without ICD codes, or 40 ICD codes for reports without codes, or any association, you will be invited to join the PARROT Consortium of Authors of the dataset.
+Po przesłaniu 20 opisów z poprawnym tłumaczeniem i kodami ICD, 40 opisów z tłumaczeniami bez kodów ICD, 40 kodów ICD dla opisów bez kodów lub dowolnej kombinacji powyższych zostaniesz zaproszony/-a do Konsorcjum Autorów zbioru PARROT.
 
-### I have an interesting idea for a clinical task to test on PARROT, how can I contribute?
+### Mam ciekawy pomysł na zadanie kliniczne do testowania na PARROT – jak mogę się włączyć?
 
-Great! PARROT is open-source, so you can start to annotate the dataset yourself, and engage other people to do so, either on the Discord server or via social media or by contacting contributeparrot@gmail.com
+Świetnie! PARROT jest projektem open source, więc możesz samodzielnie zacząć anotować zbiór i zachęcać do tego innych – na serwerze Discord, w mediach społecznościowych lub poprzez repozytorium [PARROT_v1.0](https://github.com/PARROT-reports/PARROT_v1.0/).
 
 <!-- LICENSE -->
-## License
+## Licencja
 
-POLISH_PARROT is a derivative of PARROT and is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) https://creativecommons.org/licenses/by-nc-sa/4.0/ 
-This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
+POLISH_PARROT jest utworem zależnym od PARROT i jest udostępniany na licencji Creative Commons Uznanie autorstwa – Użycie niekomercyjne – Na tych samych warunkach 4.0 Międzynarodowe (CC BY-NC-SA 4.0) https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl
+Licencja ta pozwala na rozpowszechnianie, remiksowanie, adaptowanie i tworzenie na podstawie materiału w dowolnym medium i formacie wyłącznie w celach niekomercyjnych oraz pod warunkiem podania autorstwa. Jeśli remiksujesz, adaptujesz lub tworzysz na podstawie materiału, musisz udostępnić zmodyfikowany materiał na tych samych warunkach.
 
 <!-- CONTACT -->
-## Contact
+## Kontakt
 
-contributeparrot@gmail.com
+W sprawach dotyczących oryginalnego zbioru PARROT prosimy o kontakt poprzez repozytorium [PARROT_v1.0](https://github.com/PARROT-reports/PARROT_v1.0/).
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-PARROT is a not-for-profit project imagined by Bastien Le Guellec (Lille, France) and Keno Bressem (Munich, Germany), with the support of Grégory Kuchcinki (Lille, France).
-At the moment, it recieves no institutional funding. 
-If your are an institution wishing to contribute to the project, please send an email to contributeparrot@gmail.com
+## Podziękowania
+PARROT to projekt non-profit, którego pomysłodawcami są Bastien Le Guellec (Lille, Francja) i Keno Bressem (Monachium, Niemcy), przy wsparciu Grégory'ego Kuchcinskiego (Lille, Francja).
+Obecnie projekt nie otrzymuje finansowania instytucjonalnego.
+Jeśli reprezentujesz instytucję, która chciałaby wesprzeć projekt, skontaktuj się z zespołem PARROT poprzez repozytorium [PARROT_v1.0](https://github.com/PARROT-reports/PARROT_v1.0/).
