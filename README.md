@@ -74,7 +74,7 @@ Poszerzenie zakresu: wielojęzyczne medyczne bazy danych są rzadkie, a opisy ra
 POLISH_PARROT v1.0 jest polskim podzbiorem PARROT v1.0 i obejmuje:
 - 837 opisów
 - w 1 języku (polskim)
-- autorstwa Fułek i in.
+- przygotowanych przez polski zespół autorów (Fułek i in.)
 - z Polski
 
 ## Interaktywna przeglądarka
@@ -116,7 +116,7 @@ examples/
 <!-- CONTRIBUTORS -->
 ## Autorzy
 <details>
-<summary>PARROT istnieje dzięki zgłoszeniom 76 autorów z całego świata; poniżej wymieniono autorów z polskich ośrodków. POLISH_PARROT zawiera polski podzbiór przygotowany przez Fułek i in.</summary>
+<summary>PARROT istnieje dzięki zgłoszeniom 76 autorów z całego świata; poniżej wymieniono autorów z polskich ośrodków. POLISH_PARROT zawiera polski podzbiór przygotowany przez polski zespół autorów (Fułek i in.).</summary>
 
 - Barbara Dziadkowiec-Macek, Department of Physiology and Pathophysiology, Wroclaw Medical University, Wroclaw, Poland
 - Michał Fułek, Department and Clinic of Diabetology, Hypertension and Internal Diseases, Institute of Internal Diseases, Wroclaw Medical University, Wroclaw, Poland
