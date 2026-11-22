@@ -117,25 +117,27 @@ examples/
 ## Autorzy
 <details>
 <summary>PARROT istnieje dzięki zgłoszeniom 76 autorów z całego świata; poniżej wymieniono autorów z polskich ośrodków. POLISH_PARROT zawiera polski podzbiór przygotowany przez Fułek i in.</summary>
-Barbara Dziadkowiec-Macek, Department of Physiology and Pathophysiology, Wroclaw Medical University, Wroclaw, Poland
-Michał Fułek, Department and Clinic of Diabetology, Hypertension and Internal Diseases, Institute of Internal Diseases, Wroclaw Medical University, Wroclaw, Poland
-Katarzyna Fułek, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
-Paweł Gać, Department of Radiology and Diagnostic Imaging, 4th Military Hospital, Wroclaw, Poland
-Martyna Gachowska, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
-Anna Kompanowska, Department of Pediatrics, Klodzko County Hospital, Klodzko, Poland
-Rafał Kompanowski, Orthopedics and Traumatology Department of the Musculoskeletal System, Specialist Medical Centre, Polanica-Zdroj, Poland
-Krzysztof Kraik, Faculty of medicine, Wroclaw Medical University, Wroclaw, Poland
-Dominik Krupka, Faculty of medicine, Wroclaw Medical University, Wroclaw, Poland
-Piotr Macek, Department and Clinic of Diabetology, Hypertension and Internal Diseases, Institute of Internal Diseases, Wroclaw Medical University, Wroclaw, Poland
-Małgorzata Poręba, Department of Paralympic Sport Wroclaw University of Health and Sport Sciences, Wroclaw, Poland
-Rafał Poręba, Department of Radiology and Diagnostic Imaging, 4th Military Hospital, Wroclaw, Poland
-Katarzyna Resler, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
-Jan Rotkegel, Faculty of medicine, Wroclaw Medical University, Wroclaw, Poland
-Szymon Urban, Department of Cardiology, The Copper Health Center, Lubin, Poland
-Szymon Włodarczak, Department of Cardiology, The Copper Health Center, Lubin, Poland
-Adrian Włodarczak, Department of Cardiology, The Copper Health Center, Lubin, Poland
-Andrzej Wysocki, Department of Radiology and Diagnostic Imaging, 4th Military Hospital, Wroclaw, Poland
-Tomasz Zatoński, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
+
+- Barbara Dziadkowiec-Macek, Department of Physiology and Pathophysiology, Wroclaw Medical University, Wroclaw, Poland
+- Michał Fułek, Department and Clinic of Diabetology, Hypertension and Internal Diseases, Institute of Internal Diseases, Wroclaw Medical University, Wroclaw, Poland
+- Katarzyna Fułek, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
+- Paweł Gać, Department of Radiology and Diagnostic Imaging, 4th Military Hospital, Wroclaw, Poland
+- Martyna Gachowska, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
+- Anna Kompanowska, Department of Pediatrics, Klodzko County Hospital, Klodzko, Poland
+- Rafał Kompanowski, Orthopedics and Traumatology Department of the Musculoskeletal System, Specialist Medical Centre, Polanica-Zdroj, Poland
+- Krzysztof Kraik, Faculty of medicine, Wroclaw Medical University, Wroclaw, Poland
+- Dominik Krupka, Faculty of medicine, Wroclaw Medical University, Wroclaw, Poland
+- Piotr Macek, Department and Clinic of Diabetology, Hypertension and Internal Diseases, Institute of Internal Diseases, Wroclaw Medical University, Wroclaw, Poland
+- Małgorzata Poręba, Department of Paralympic Sport Wroclaw University of Health and Sport Sciences, Wroclaw, Poland
+- Rafał Poręba, Department of Radiology and Diagnostic Imaging, 4th Military Hospital, Wroclaw, Poland
+- Katarzyna Resler, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
+- Jan Rotkegel, Faculty of medicine, Wroclaw Medical University, Wroclaw, Poland
+- Szymon Urban, Department of Cardiology, The Copper Health Center, Lubin, Poland
+- Szymon Włodarczak, Department of Cardiology, The Copper Health Center, Lubin, Poland
+- Adrian Włodarczak, Department of Cardiology, The Copper Health Center, Lubin, Poland
+- Andrzej Wysocki, Department of Radiology and Diagnostic Imaging, 4th Military Hospital, Wroclaw, Poland
+- Tomasz Zatoński, Department and Clinic of Otolaryngology, Head and Neck Surgery, Wroclaw Medical University, 50-556 Wroclaw, Poland
+
 </details>
 
 <!-- FAQ -->
